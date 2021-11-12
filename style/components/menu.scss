@@ -1,0 +1,201 @@
+.menu {
+    margin-left: 50px;
+    margin-top: 43px;
+    transition: all 300ms;
+    position: relative;
+
+
+}
+
+.menu__list {
+  @include phones {
+    display: none;
+  }
+}
+
+.menu__item-link {
+  font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 300ms;
+    display: block;
+
+    &--active::before {
+      content: '';
+    display: block;
+    left: -25px;
+    height: 2px;
+    background-color: #ff0000;
+    transition: all 300ms;
+    position: absolute;
+    top: 11px;
+    width: 164px;
+    }
+}
+
+.menu__wine {
+  position: absolute;
+  top: 0;
+  left: 182px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+
+
+
+  &--active {
+    display: block;
+
+    @include phones {
+      display: block;
+      position: relative;
+      left: 0;
+    }
+  }
+
+  &-item {
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+
+    
+    @include phones {
+      text-transform: none;
+      cursor: default;
+    }
+
+    &--active::before {
+    content: '';
+    display: block;
+    left: -25px;
+    height: 2px;
+    background-color: #ff0000;
+    transition: all 300ms;
+    position: absolute;
+    top: 11px;
+    width: 164px;
+
+    @include phones {
+      content: none;
+    }
+    }
+  }
+}
+
+.menu__wine-item-block {
+  position: fixed;
+  top: 151px;
+  left: 387px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+  cursor: default;
+  text-transform: capitalize;
+
+  &--active {
+    display: flex;
+
+    @include phones {
+      position: static;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.menu__wine-item-name {
+  margin-right: 10px;
+}
+
+
+
+.menu__page {
+  position: absolute;
+  top: 0;
+  left: 182px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+
+  &--active {
+    display: block;
+ 
+
+    @include phones {
+      display: block;
+      position: relative;
+      left: 0;
+    }
+  }
+
+  &-item {
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+
+    @include phones {
+      text-transform: none;
+      cursor: default;
+    }
+
+    &--active::before {
+    content: '';
+    display: block;
+    left: -25px;
+    height: 2px;
+    background-color: #ff0000;
+    transition: all 300ms;
+    position: absolute;
+    top: 11px;
+    width: 164px;
+
+    @include phones {
+      content: none;
+    }
+    }
+  }
+}
+
+.menu__page-item-block {
+  position: fixed;
+  top: 151px;
+  left: 387px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+  cursor: default;
+  text-transform: capitalize;
+
+  &--active {
+    display: flex;
+
+    @include phones {
+      position: static;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.menu__page-item-name {
+  margin-right: 10px;
+}
+
+
+

@@ -1,0 +1,106 @@
+.slider__buttons {
+  margin-left: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+
+    @include phones {
+      display: none;
+    }
+
+}
+
+.slider__button {
+  height: 50px;
+  width: 50px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  display: block;
+  transition: .5s;
+  background-size: 20px 20px;
+
+  &--left {
+  background-image: url("./../../img/icons8-длинная-стрелка-влево-30.png");
+  }
+  &--right {
+    background-image: url("./../../img/icons8-длинная-стрелка-вправо-30.png");
+    }
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+
+  &--mobile {
+    width: 0;
+  }
+}
+
+.slider__items {
+  display: none;
+  position: relative;
+  transition: .5s;
+
+  &--active {
+    display: flex;
+    transition: .5s;
+  }
+}
+
+.slider__item {
+  display: none;
+  flex-shrink: 0;
+  width: 100%;
+  transition: .5s;
+  background-position: 85% 47%;
+  height: 100vh;
+
+  &--active {
+    display: flex;
+    transition: .5s;
+  }
+
+  &--opacity {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        }
+  }
+}
+
+.slider__interior--1 {
+  background-image: url("./../../img/interior-msk1.jpg");
+}
+
+.slider__interior--2 {
+  background-image: url("./../../img/interior-msk2.jpg");
+}
+
+.slider__interior--3 {
+  background-image: url("./../../img/interior-msk3.jpg");
+}
+
+.slider__cooking--1 {
+  background-image: url("./../../img/cooking-msk1.jpg");
+}
+
+.slider__cooking--2 {
+  background-image: url("./../../img/cooking-msk2.jpg");
+}
+
+.slider__cooking--3 {
+  background-image: url("./../../img/cooking-msk3.jpg");
+}

@@ -1,0 +1,37 @@
+//normalize
+@import "./normalize.css";
+
+//media
+
+@import "./media.scss";
+
+$baseFontSize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$black: #292929;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+//layout
+@import "./layout.scss";
+
+//components
+@import "./components/maincontent.scss";
+@import "./components/content.scss";
+@import "./components/panel";
+@import "./components/header";
+@import "./components/button";
+@import "./components/menu.scss";
+@import "./components/slider.scss";
+@import "./components/booking";
+@import "./components/hamburger";
+@import "./components/menu-mobile";
+
+
+
+
+

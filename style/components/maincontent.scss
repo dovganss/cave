@@ -1,0 +1,78 @@
+.maincontent {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.maincontent__section {
+  width: 100%;
+  background-position: 85% 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+  @include phones {
+    height: 50%;
+  }
+
+  &--spb {
+    background-image: url("./../../img/spb.jpg");
+
+    &:hover {
+      width: 115%;
+      transition: all 500ms;
+
+      @include phones {
+        width: 100%;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
+        }
+  }
+}
+  &--msk {
+  background-image: url("./../../img/msk.jpg");
+
+  &:hover {
+    width: 115%;
+    transition: all 500ms;
+
+    @include phones {
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 2;
+      }
+  }
+}
+}
+
+.maincontent__title {
+  font-weight: bold;
+  font-size: 42px;
+  width: 39%;
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,29 @@
+.hamburger {
+  display: none;
+
+  @include phones {
+    right: 40px;
+    top: 30px;
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 7.6vmin;
+  }
+
+}
+
+
+
+
+
+.hamburger__plank {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: all 300ms;
+}
+
+
+
